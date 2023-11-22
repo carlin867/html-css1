@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        @font-face {
+            font-family: 'OpenSans';
+            src: url(../fontes/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+        }
+        body{
+            font-family: 'OpenSans';
+        }
+        a{
+            color: brown;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: cadetblue;
+        }
+        
+        a:hover{
+            text-decoration: underline;
+            color: blueviolet;
+        }
+        a:active{
+            color: yellow;
+        }
+        a::after{
+            content: '[link]';
+            color: gray;
+            text-decoration: none;
+            font-weight: normal;
+        }
+        #a1::before{
+            content: '♔';
+        }
+        #a2::before{
+            content: '♕';
+        }
+        #a3::before{
+            content: '♙';
+        }
+        .especial{
+            background-color: rgb(215, 27, 221)
+        }
+        /*
+        SELETORES PERSONALIZADOS    
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo- element
+        */
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li id="a1" class="especial"><a href="https://github.com/carlin867/html-css">Repositório GitHub</a></li>
+        <li id="a2" class="especial"><a href="https://www.youtube.com/@carlosaugustofssousa4505/videos">Canal Do Youtube</a></li>
+        <li id="a3" class="especial"><a href="https://www.youtube.com/cursoemvideo/">Site do Curso em Video</a></li>
+    </ul>
+
+    
+</body>
+</html>

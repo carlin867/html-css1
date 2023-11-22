@@ -1,0 +1,30 @@
+@charset "UTF-8";
+body{
+    background-color: lightblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1{
+    color: red;
+}
+h2{
+    color: blue;
+}
+.p a{
+    color: black;
+    display: inline;
+    
+}
+.p a:hover{
+    color: white;
+    transition: 1s;
+}
+.p{
+
+    background-color: white;
+}
+.p:hover{
+    
+    background-color: black;
+    transition: 1s;
+    
+}

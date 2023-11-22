@@ -1,0 +1,53 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/*Mudar cor de fundo do site*/
+body{
+    background-color: rgb(170, 165, 165);
+}
+
+
+/*Para mudar a cor de fundo do menu e do h1 e colocar display flex e da um espaçamento entre o h1 e o menu*/
+header{
+    width: 100%;
+    color: white;
+    background-color: #24252a;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    position: fixed;
+}
+/*tornar o h1 "humanismo" centralizado na header*/
+header h1{
+    display: flex;
+    align-items: center;
+}
+/*para o menu ter um distanciamento do h1 no header*/
+header menu{
+    padding-left: 30px;
+}
+/*para o li ficar sem margin e com o display inline-block e um preenchimento interno de 19px*/
+header menu ul li{
+    display: inline-block;
+    padding: 19px;
+    margin: 0px;
+}
+/*para quando o mouse passar por cima os li do menu ficar com cor de fundo cinza e o cursor virar a mãozinha*/
+header menu ul li:hover{
+    background-color: gray;
+    cursor: pointer;
+    transition: 0.6s;
+}
+/*para os links não ficarem azuis e sem sublinhado*/
+header menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+article{
+    margin-left: 5px;
+    width: 500px;
+    background-color: white;
+}
+

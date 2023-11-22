@@ -1,0 +1,34 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+#cdp{
+    text-align:center;
+}
+#menu-h ul{
+    list-style-type: none;
+    padding: 0;
+    background-color: #38373a;
+}
+#menu-h ul li{
+    display: inline;
+
+}
+#menu-h ul li a{
+    color: #fff;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .6s;
+   
+
+}
+
+#menu-h ul li a:hover{
+    color: orange;
+}
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: rgb(24, 139, 233);
+}

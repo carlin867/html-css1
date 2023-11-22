@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        @font-face {
+            font-family: 'OpenSans';
+            src: url(../fontes/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+        }
+        body{
+            font: normal normal 1em 'OpenSans';
+        }
+        div:hover{
+            color: blue;
+        }
+        div p{
+            display: none;
+        }
+        div:hover p{
+            display: block;
+            color: whitesmoke;
+            background-color: blue;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse em cima do texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fim do Exemplo</p>
+    
+</body>
+</html>

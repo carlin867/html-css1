@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+    text-align: center;
+}
+h1{
+    color: white;
+}
+p{
+    color: white;
+}
+div{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 50px;
+    position: relative;
+    text-align: center;
+    color: black;
+}
+div1{
+    width: 280px;
+    height: 250px;
+    background-color: white;
+    border-radius: 200px;
+}
+

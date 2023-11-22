@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*
+em HTML id = em CSS #
+em HTML class = em CSS .
+
+*/
+body{
+    background-color: rgba(221, 136, 26, 0.582);
+}
+h1{
+    color: rgba(156, 88, 196, 0.699);
+}
+#pr{
+    text-align: center;
+    background-color: aqua;
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(221, 137, 26, 0.678);
+    
+
+}
+h2{
+    color: rgba(199, 24, 24, 0.808);
+}
+.basico{
+    color: rgba(30, 189, 136, 0.774);
+    font-weight: bolder;
+}
+.intermediario{
+    color: rgba(41, 41, 197, 0.719);
+    font-weight: lighter;
+}
+.avancado{
+    color: rgba(190, 138, 7, 0.692);
+    font-weight: bold;
+}
+.destaque{
+    background-color: rgba(255, 255, 0, 0.664);
+}
