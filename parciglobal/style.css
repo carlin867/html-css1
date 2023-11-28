@@ -1,4 +1,9 @@
 
+@font-face {
+    font-family: 'work-sans';
+    src: url(fontes/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+
 *{
     padding: 0px;
     margin: 0px;
@@ -11,13 +16,14 @@ body{
 
 /*Para mudar a cor de fundo do menu e do h1 e colocar display flex e da um espaçamento entre o h1 e o menu*/
 header{
+    font-family: 'work-sans';
     width: 100%;
     color: white;
     background-color: #24252a;
     display: flex;
     justify-content: space-around;
     padding: 15px;
-    position: fixed;
+    z-index: 1;
 }
 /*tornar o h1 "humanismo" centralizado na header*/
 header h1{
@@ -39,15 +45,33 @@ header menu ul li:hover{
     background-color: gray;
     cursor: pointer;
     transition: 0.6s;
+    scale: 1.2;
 }
 /*para os links não ficarem azuis e sem sublinhado*/
 header menu ul li a{
     text-decoration: none;
     color: white;
 }
+
+
 article{
+    
+    font-family: 'work-sans';
     margin-left: 5px;
     width: 500px;
     background-color: white;
+    z-index: 2;
+}
+.titulo{
+    font-size: 2em;
+}
+.para{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.lista{
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
 }
 
