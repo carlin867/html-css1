@@ -1,1 +1,0 @@
-(function(a){var b=a.document.getElementsByTagName("link")[0];a=a.document.createElement("link");a.href="https://cdn.7gra.us/feedback-css/v2.1.3.css";a.rel="stylesheet";a.type="text/css";b.parentNode.insertBefore(a,b)})(window);
