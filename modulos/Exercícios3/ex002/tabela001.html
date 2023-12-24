@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+    <style>
+        table{
+            height: 400px;
+            width: 400px;
+            border-collapse: collapse;
+        }
+        .linha{
+            background-color: gray;
+        }
+        .dado{
+            background-color: yellow;
+        }
+        .vas{
+            vertical-align: text-top;
+        }
+        .ch{
+            vertical-align: super;
+            background-image: url(../ex001/imagens/pattern002.png);
+            color: darkseagreen;
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Minha primeira tabela</h1>
+    <!-- 
+        Hierarquia de Tabelas Simples
+        Table - Tabela
+            Table Row - linha da tabela
+                Table Header - Cabeçalho de Tabela
+                Table Data - dado de tabela 
+     -->
+    <table>
+      <tr>
+        <!--Primeira Linha-->
+        <td class="linha">A1</td>
+        <td class="linha">B1</td>
+        <td class="linha">C1</td>
+      </tr>
+
+      <tr>
+        <td class="dado">A2</td>
+        <td class="dado">B2</td>
+        <td class="dado">C2</td>
+      </tr>
+
+      <tr>
+        <td class="vas">A3</td>
+        <td class="vas">B3</td>
+        <td class="vas">C3</td>
+      </tr>
+      <tr>
+        <td class="ch">A4</td>
+        <td class="ch">B4</td>
+        <td class="ch">C4</td>
+      </tr>
+    </table>
+  </body>
+</html>
