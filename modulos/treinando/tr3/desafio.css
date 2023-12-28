@@ -1,0 +1,14 @@
+table{
+    width: 300px;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+table caption{
+    background-color: black;
+    color: white;
+}
+td{
+    border: 1px solid black;
+    background-color: lightgray;
+    text-align: center;
+}

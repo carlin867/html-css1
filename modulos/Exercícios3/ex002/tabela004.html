@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 500px;
+      }
+      td {
+        border: 1px solid black;
+        text-align: center;
+      }
+      th {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exercício de Tabelas</h1>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Grupo</th>
+          <th scope="col">Nomes</th>
+          <th colspan="4" scope="colgroup">Filmes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="3" scope="rowgroup">Mulheres</th>
+          <td>Ana Maria Santos</td>
+          <td>A volta</td>
+          <td>X-Men</td>
+          <td>Vingadores</td>
+        </tr>
+        <tr>
+          <td>Beatriz Souza</td>
+          <td>Vasco da Gama</td>
+          <td>X-Men</td>
+          <td>Vingadores</td>
+        </tr>
+        <tr>
+          <td>Cláudia Mendonça</td>
+          <td>Percy Jackson</td>
+          <td>X-Men</td>
+          <td>Vingadores</td>
+        </tr>
+
+        <tr>
+          <th rowspan="3" scope="rowgroup">Homens</th>
+          <td>Carlos Augusto</td>
+          <td>X-Men</td>
+          <td>X-Men</td>
+          <td>Vingadores</td>
+        </tr>
+        <tr>
+          <td>Lucas Benício</td>
+          <td>Vingadores</td>
+          <td>X-Men</td>
+          <td>Vingadores</td>
+        </tr>
+        <tr>
+          <td>Werik David</td>
+          <td>Renato White</td>
+          <td>X-Men</td>
+          <td>Vingadores</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <th colspan="4" scope="row">Total</th>
+        <td>1000</td>
+      </tfoot>
+    </table>
+  </body>
+</html>
