@@ -11,18 +11,40 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         th,td{
             border: 1.5px solid black;
             text-align: center;
             padding: 10px;
         }
+        thead tr th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
         thead,tfoot{
             background-color: gray;
             color: white;
         }
+       
+        tbody tr:nth-child(2n)/*ou even*/{
+            background-color: lightgray;
+        }
+        tbody tr:nth-child(2n-1)/*ou odd*/{
+            background-color: lightslategray;
+        }
+       
+
         .num{
             text-align: start;
+        }
+        caption{
+            font-size: 1.5em;
+            color: black;
+            background-color: lightgray;
+            padding: 10px;
+            font-weight: bolder;
         }
     </style>
 </head>
@@ -30,6 +52,7 @@
     <h1>Uso de Tabelas Grandes</h1>
     <!-- Anatomia para tabelas grandes 
     Table
+        caption
         thead
             tr,td,th
         tbody
@@ -38,9 +61,10 @@
             tr,td,th
     -->
     <table>
+        <caption>População das Unidades Federetativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
         </thead>
         <tbody>
             <tr>
@@ -55,14 +79,88 @@
                 <td>Rio de Janeiro</td>
                 <td class="num">17 264 943</td>
             </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 019</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 019</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 019</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 019</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 019</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 019</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
         </tbody>
+        
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num">210 147 125</td>
             </tr>
         </tfoot>
     </table>
+    
 
     
 </body>
