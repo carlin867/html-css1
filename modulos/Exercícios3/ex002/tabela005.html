@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício de Tabelas</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 550px;
+      }
+      caption{
+        border: 1px solid black;
+        background-color: blue;
+        color: white;
+      }
+      td {
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px;
+      }
+      th{
+        border: 1px solid black;
+        padding: 8px;
+      }
+      .cnome{
+        background-color: aquamarine;
+      }
+      .csexo{
+        background-color: orange;
+      }
+      .cnas{
+        background-color: blueviolet;
+      }
+      .cidade{
+        background-color: crimson;
+      }
+      .cprof{
+        background-color: cornsilk;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exercício de Tabelas</h1>
+    <table>
+        <colgroup>
+        <col class="cnome" >
+        <!-- dentro do col pode usar span para o col ocupar mais de 1 coluna-->
+        <col class="csexo">
+        <col class="cnas">
+        <col class="cidade">
+        <col class="cprof">
+    </colgroup>
+      <caption>
+        Cadastro
+      </caption>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Data de N.</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Profissão</th>
+      </tr>
+      <tr>
+        <td>Ana Maria</td>
+        <td>Feminino</td>
+        <td>10/10/1970</td>
+        <td>53</td>
+        <td>Secretária</td>
+      </tr>
+      <tr>
+        <td>Carlos Augusto</td>
+        <td>Masculino</td>
+        <td>16/05/2008</td>
+        <td>15</td>
+        <td>Engenheiro de Software</td>
+      </tr>
+      <tr>
+        <td>Werik David</td>
+        <td>Gay</td>
+        <td>26/12/2007</td>
+        <td>16</td>
+        <td>Analista e Desenvolvedor de Softwares</td>
+      </tr>
+      <tr>
+        <td>Lucas Benício</td>
+        <td>Homossexual</td>
+        <td>26/03/2007</td>
+        <td>16</td>
+        <td>Não Definida</td>
+      </tr>
+    </table>
+  </body>
+</html>
