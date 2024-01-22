@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* Estilos para Impressora */
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu{
+    display: none;
+}
+header h1{
+    text-align: center;
+}
+article::after{
+    content: 'Esse Artigo foi impresso atravês do Site www.neymarmelhordomundo.com';
+}

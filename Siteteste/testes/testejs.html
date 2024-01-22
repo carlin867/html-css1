@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de JavaScript</title>
+</head>
+<body>
+    <div id="perguntas">
+        <p>
+            <label for="inome">Digite seu Nome:</label>
+            <input type="text" name="nome" id="inome" autocomplete="nickname">
+        </p>
+        <p>
+            <label for="iidade">Digite sua Idade:</label>
+            <input type="number" name="idade" id="iidade">
+        </p>
+        <p>
+            <label for="igosto">Oque você gosta:</label> <br>
+            <textarea name="gosto" id="igosto" cols="15" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="button" value="Enviar" onclick="clickAqui()">
+        </p>
+    </div>
+    <div id="res"></div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
