@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post">
+
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="estado" id="iest">
+
+                <option value="" selected>------- Escolha -------</option>
+
+                <optgroup label="Estados Fodas">
+                    <option value="alagoas">Alagoas</option>
+                    <option value="ceara">Ceará</option>
+                    <option value="sao_paulo">São Paulo</option>
+                </optgroup>
+                <optgroup label="Estados Não Fodas">
+                    <option value="rio_de_janeiro">Rio De Janeiro</option>
+                    <option value="espirito_santo">Espírito Santo</option>
+                    <option value="minas_gerais">Minas Gerais</option>
+                </optgroup>
+            </select>
+            
+        </p>
+        <p>
+            <label for="ip">Profissão:</label>
+            <input type="text" name="ip" id="p" list="profissoes">
+            <datalist id="profissoes" >
+                <option value="Professor">Professor</option>
+                <option value="ADS">Analista e Desenvolvedor de Dados</option>
+                <option value="Programador">Programador</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Escreva sua Mensagem Aqui..."></textarea>
+        </p>
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+  </body>
+</html>
