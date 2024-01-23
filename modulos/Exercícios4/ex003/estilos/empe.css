@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/* Aparelho Em Pé(portrait) */
+body{
+    background-image: url(../pacote-imagens-cap25/imagens/cev-portrait.jpg);
+    background-position: center center;
+}
