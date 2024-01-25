@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/*Versão Mobile First*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+h1{
+    text-align: center;
+    color: white; 
+    text-shadow: 1px 1px 2px rgb(175, 175, 175);
+}
+
+body{
+    background: black url(../pacote-imagens-cap25/imagens/back-phone.jpg) no-repeat ;
+    background-size: cover;
+    background-position: center center;
+}
+
+main{
+    background-color: aliceblue;
+    width: 90vw;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+img{
+    margin: auto;
+    display: block;
+}
+
+#phone{
+    display: block;
+}
+#tablet{
+    display: none;
+}
+#impressora{
+    display: none;
+}
+#pc{
+    display: none;
+}
+#tv{
+    display: none;
+}

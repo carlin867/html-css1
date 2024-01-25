@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* Todas as Demais Midias */
+
+/*Typical Device Breakpoints
+Pequenas Telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+Grandes Telas: acima de 1200px
+*/
+@media screen and (min-width: 762px) and (max-width: 992px) {
+  #phone {
+    display: none;
+  }
+  #tablet {
+    display: block;
+  }
+  #impressora {
+    display: none;
+  }
+  #pc {
+    display: none;
+  }
+  #tv {
+    display: none;
+  }
+  body {
+    background-image: url(../pacote-imagens-cap25/imagens/back-tablet.jpg);
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #phone {
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+  #impressora {
+    display: none;
+  }
+  #pc {
+    display: block;
+  }
+  #tv {
+    display: none;
+  }
+  body {
+    background-image: url(../pacote-imagens-cap25/imagens/back-pc.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  #phone {
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+  #impressora {
+    display: none;
+  }
+  #pc {
+    display: none;
+  }
+  #tv {
+    display: block;
+  }
+  body {
+    background-image: url(../pacote-imagens-cap25/imagens/back-tv.jpg);
+  }
+}
+@media print {
+  body {
+    font-family: "Courier New", Courier, monospace;
+  }
+  main {
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+  main h1 {
+    text-shadow: none;
+    color: black;
+  }
+  main::after {
+    content: "Essa impressão foi feita atravês dos conhecimentos de Carlos Augusto.";
+    text-decoration: overline;
+    font-size: small;
+  }
+  #phone {
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+  #impressora {
+    display: block;
+  }
+  #pc {
+    display: none;
+  }
+  #tv {
+    display: none;
+  }
+}
